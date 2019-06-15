@@ -1,11 +1,11 @@
 <template>
   <div class="HolyGrail" :class="className">
     <div class="HolyGrail-body">
-      <main class="HolyGrail-content nes-container with-title">
+      <slot name="left"></slot>
+
+      <main class="HolyGrail-content">
         <slot></slot>
       </main>
-      
-      <slot name="left"></slot>
       <slot name="right"></slot>
     </div>
   </div>
@@ -36,12 +36,8 @@ export default class HolyGrail extends Vue {}
 
 .HolyGrail-content {
   flex: 1;
-  overflow-x: hidden;
-}
-
-.HolyGrail-nav {
-  /* put the nav on the left */
-  order: -1;
+  overflow: hidden;
+  height: 100vh;
 }
 
 .HolyGrail,

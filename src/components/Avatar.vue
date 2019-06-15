@@ -6,6 +6,7 @@
       width: ${size}px;
       height: ${size}px;
     `"
+    :class="{ 'Avatar-small': small }"
   >
     {{ initials }}
   </div>
@@ -35,6 +36,10 @@ export default class Avatar extends Vue {
 
     return this.name.substring(0, 2).toUpperCase();
   }
+
+  get small() {
+    return this.size < 48;
+  }
 }
 </script>
 
@@ -48,5 +53,9 @@ export default class Avatar extends Vue {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.Avatar-small {
+  font-size: 1em;
 }
 </style>

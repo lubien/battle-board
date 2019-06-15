@@ -71,6 +71,7 @@ export default class TurnQueue extends Vue {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 12px;
 }
 
 .TurnQueue-avatar-container {

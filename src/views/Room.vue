@@ -5,7 +5,10 @@
     </template>
 
     <template>
-      <TurnQueue />
+      <div class="Room-main">
+        <TurnQueue />
+        <Chat />
+      </div>
     </template>
 
     <template slot="left">
@@ -24,6 +27,7 @@ import HolyGrail from '@/components/HolyGrail.vue';
 import LeftBar from '@/components/LeftBar.vue';
 import RightBar from '@/components/RightBar.vue';
 import TurnQueue from '@/components/TurnQueue.vue';
+import Chat from '@/components/Chat.vue';
 
 @Component({
   components: {
@@ -31,6 +35,7 @@ import TurnQueue from '@/components/TurnQueue.vue';
     LeftBar,
     RightBar,
     TurnQueue,
+    Chat,
   },
 })
 export default class Room extends Vue {}
@@ -48,5 +53,12 @@ export default class Room extends Vue {}
 
 .Room .HolyGrail-body {
   height: 100vh;
+}
+
+.Room-main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 </style>

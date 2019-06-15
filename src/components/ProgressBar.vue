@@ -43,6 +43,7 @@ export default class ProgresBar extends Vue {
 }
 
 .ProgresBar {
+  appearance: none;
   display: block; /* default: inline-block */
   width: 100%;
   margin: 1px 1px 2px;
@@ -50,11 +51,6 @@ export default class ProgresBar extends Vue {
   border: none;
   background: #303841;
   border-radius: 3px;
-}
-
-.ProgresBar::-moz-progress-bar {
-  border-radius: 12px;
-  background: #fff;
 }
 
 /* webkit */
@@ -65,27 +61,31 @@ export default class ProgresBar extends Vue {
 }
 
 .ProgresBar::-webkit-progress-bar {
-    background: transparent;
+  background: transparent;
 }
   
 .ProgresBar::-webkit-progress-value {  
   border-radius: 3px;
-  background: #fff;
+  background-color: #fff;
 }
 
-.ProgresBar-hp::-webkit-progress-value {  
-  background: #f1d917;
+.ProgresBar-hp::-webkit-progress-value, 
+.ProgresBar-hp::-moz-progress-bar {  
+  background-color: #fe5400!important;
 }
 
-.ProgresBar-hp.ProgresBar-warn::-webkit-progress-value {  
-  background: #de9706;
+.ProgresBar-hp.ProgresBar-warn::-webkit-progress-value, 
+.ProgresBar-hp.ProgresBar-warn::-moz-progress-bar {  
+  background-color: #ff0000;
 }
 
-.ProgresBar-hp.ProgresBar-danger::-webkit-progress-value {  
-  background: #e07157;
+.ProgresBar-hp.ProgresBar-danger::-webkit-progress-value,
+.ProgresBar-hp.ProgresBar-danger::-moz-progress-bar,
+.ProgresBar-hp.ProgresBar-danger[aria-valuenow]:before {  
+  background-color: #861617;
 }
 
 .ProgresBar-mp::-webkit-progress-value {  
-  background: #91ce44;
+  background: #497dc6;
 }
 </style>

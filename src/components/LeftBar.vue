@@ -58,7 +58,6 @@ export default class LeftBar extends Vue {
 <style scoped>
 .LeftBar.SideBar {
   width: 320px;
-  order: -1;
 }
 </style>
 
