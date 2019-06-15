@@ -5,7 +5,7 @@
     </template>
 
     <template>
-      A
+      <TurnQueue />
     </template>
 
     <template slot="left">
@@ -23,12 +23,14 @@ import { Component, Vue } from 'vue-property-decorator';
 import HolyGrail from '@/components/HolyGrail.vue';
 import LeftBar from '@/components/LeftBar.vue';
 import RightBar from '@/components/RightBar.vue';
+import TurnQueue from '@/components/TurnQueue.vue';
 
 @Component({
   components: {
     HolyGrail,
     LeftBar,
     RightBar,
+    TurnQueue,
   },
 })
 export default class Room extends Vue {}
