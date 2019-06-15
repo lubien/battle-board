@@ -25,7 +25,7 @@ export default class SideBarInner extends Vue {
 
 @media (min-width: 768px) {
   .SideBarInner {
-    max-width: 220px;
+    width: 220px;
   }
 }
 

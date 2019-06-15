@@ -24,8 +24,4 @@ export default class SideBar extends Vue {
 .SideBar > * {
   height: 100%;
 }
-
-.SideBar > * {
-  flex: 1;
-}
 </style>

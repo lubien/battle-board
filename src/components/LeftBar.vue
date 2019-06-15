@@ -57,7 +57,7 @@ export default class LeftBar extends Vue {
 
 <style scoped>
 .LeftBar.SideBar {
-  flex: 1;
+  width: 320px;
   order: -1;
 }
 </style>
@@ -65,7 +65,7 @@ export default class LeftBar extends Vue {
 <style>
 .LeftBar-action-bar {
   background-color: #303841;
-  max-width: 96px;
+  width: 100px;
   padding-top: 32px;
 }
 

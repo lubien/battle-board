@@ -25,7 +25,6 @@ export default class RightBar extends Vue {
 
 <style scoped>
 .RightBar.SideBar {
-  flex: 1;
-  max-width: 220px;
+  width: 220px;
 }
 </style>

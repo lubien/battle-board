@@ -36,6 +36,7 @@ export default class HolyGrail extends Vue {}
 
 .HolyGrail-content {
   flex: 1;
+  overflow-x: hidden;
 }
 
 .HolyGrail-nav {
